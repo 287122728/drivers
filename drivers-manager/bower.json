@@ -1,0 +1,32 @@
+{
+  "name": "po-manage",
+  "authors": [
+    "xiejj <xiejj@shishike.com>"
+  ],
+  "description": "po-manage",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/webapp/plugins",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-table": "^1.11.0",
+    "jquery": "^3.1.0",
+    "blueimp-file-upload": "^9.12.5",
+    "bootstrap-submenu": "^2.0.4",
+    "bootstrap-fileinput": "^4.3.3",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "bootbox.js": "^4.4.0",
+    "smalot-bootstrap-datetimepicker": "^2.3.11",
+    "vue": "^1.0.26",
+    "vue-router": "^0.7.13",
+    "x-editable": "^1.5.1"
+  }
+}
