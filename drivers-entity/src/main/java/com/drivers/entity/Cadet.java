@@ -2,6 +2,8 @@ package com.drivers.entity;
 
 import com.drivers.entity.base.BaseEntity;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;
@@ -18,6 +20,8 @@ import java.time.ZonedDateTime;
 @Entity
 @Table(name = "cadet")
 @Data
+@DynamicInsert
+@DynamicUpdate
 public class Cadet extends BaseEntity {
 
     @OneToOne(mappedBy = "cadet")

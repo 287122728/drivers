@@ -2,6 +2,8 @@ package com.drivers.entity;
 
 import com.drivers.entity.base.BaseEntity;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 
@@ -17,6 +19,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "suggestion")
 @Data
+@DynamicInsert
+@DynamicUpdate
 public class Suggestion extends BaseEntity{
 
     @ManyToOne

@@ -2,6 +2,8 @@ package com.drivers.entity;
 
 import com.drivers.entity.base.BaseEntity;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,6 +21,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "suggestion_feekback")
 @Data
+@DynamicInsert
+@DynamicUpdate
 public class SuggestionFeekback extends BaseEntity{
 
     @Column(name = "suggestion_id")

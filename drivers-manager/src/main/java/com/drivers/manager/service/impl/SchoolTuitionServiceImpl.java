@@ -31,4 +31,9 @@ public class SchoolTuitionServiceImpl implements SchoolTuitionService {
         // TODO : 抛出异常
         return schoolTuitions;
     }
+
+    @Override
+    public SchoolTuition update(SchoolTuition schoolTuition) {
+        return repository.save(schoolTuition);
+    }
 }

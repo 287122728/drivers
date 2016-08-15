@@ -2,10 +2,10 @@ package com.drivers.entity;
 
 import com.drivers.entity.base.BaseEntity;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Title:
@@ -19,9 +19,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "school_tuition")
 @Data
+@DynamicInsert
+@DynamicUpdate
 public class SchoolTuition extends BaseEntity{
 
-    @Column(name = "school_id")
+    @OneToOne
+    @JoinColumn(name = "school_id",insertable = false,updatable = false)
+    private School school;
+
+    @Column(name = "school_id",updatable = false)
     private Long schoolId;
 
     @Column(name = "tuition")

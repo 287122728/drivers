@@ -2,6 +2,8 @@ package com.drivers.entity;
 
 import com.drivers.entity.base.BaseEntity;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -18,6 +20,8 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "cadet_pay")
 @Data
+@DynamicInsert
+@DynamicUpdate
 public class CadetPay extends BaseEntity {
 
     @OneToOne

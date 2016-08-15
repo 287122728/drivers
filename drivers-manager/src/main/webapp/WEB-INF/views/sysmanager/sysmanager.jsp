@@ -20,8 +20,9 @@
             <div class="col-lg-12">
                 <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
                 <ol class="breadcrumb">
-                    <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                    <li><i class="fa fa-laptop"></i>驾校管理/驾校信息</li>
+                    <li><i class="fa fa-home"></i><a href="${ctx}/index">Home</a></li>
+                    <li><i class="fa fa-laptop"></i>系统管理员</li>
+                    <li><i class="fa fa-laptop"></i>管理员信息</li>
                 </ol>
             </div>
         </div>

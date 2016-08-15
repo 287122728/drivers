@@ -3,6 +3,7 @@ package com.drivers.repository;
 import com.drivers.entity.School;
 import com.drivers.entity.SchoolTuition;
 import com.drivers.jdbc.sql.Select;
+import com.drivers.jdbc.sql.Update;
 import com.drivers.vo.SchoolTuitionVo;
 
 import java.util.List;
@@ -22,4 +23,12 @@ public class SchoolTuitionRepositoryImpl extends CommonDaoImpl implements School
         List<SchoolTuitionVo> result = this.getJdbcTemplate().query(sql,new Object[]{},newAnnotationRowMapper(SchoolTuitionVo.class));
         return result;
     }
+
+//    @Override
+//    public Integer update(SchoolTuition schoolTuition) {
+//        Update update = new Update(SchoolTuition.class);
+//        update.toSQL();
+//
+//        return null;
+//    }
 }

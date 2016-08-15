@@ -42,7 +42,7 @@ $(document).ready(function () {
         }],
         onEditableSave: function (field, row, oldValue, $el) {
             if(row.tuition != oldValue || row.tuitionExplain != oldValue){
-                tuitionService.updateLinkUrl(row.id,row.tuition);
+                tuitionService.update(row.id,row.tuition,row.tuitionExplain);
             }
         }
     });
@@ -50,12 +50,16 @@ $(document).ready(function () {
 
 function TuitionService(){
     var obj   = new Object();
-    obj.updateLinkUrl = function (id,linkUrl) {
+    obj.update = function (id,tuition,tuitionExplain) {
         $.ajax({
             url: '/schooltuitions/' + id,
             dataType: 'json',
             method: 'PUT',
-            data:{'linkUrl':linkUrl},
+            data:{
+                'id':id,
+                'tuition': tuition,
+                'tuitionExplain': tuitionExplain
+            },
             success: function(data){
                 $('#table').bootstrapTable('refresh');
             }

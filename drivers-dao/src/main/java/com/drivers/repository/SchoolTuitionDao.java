@@ -13,4 +13,6 @@ import java.util.List;
 public interface SchoolTuitionDao {
 
     public List<SchoolTuitionVo> findSchoolTuition();
+
+//    public Integer update(SchoolTuition schoolTuition);
 }

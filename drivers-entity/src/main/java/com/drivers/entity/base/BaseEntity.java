@@ -25,7 +25,7 @@ public class BaseEntity implements  Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "data_creator")
+    @Column(name = "data_creator",updatable = false)
     private String dataCreator;
 
     @Column(name = "data_updater")
@@ -34,7 +34,7 @@ public class BaseEntity implements  Serializable{
     @Column(name = "data_create_datetime", insertable = false,updatable = false)
     private ZonedDateTime dataCreateDatetime;
 
-    @Column(name = "data_update_datetime", insertable = false)
+    @Column(name = "data_update_datetime", insertable = false,updatable = false)
     private ZonedDateTime dataUpdateDatetime;
 
     @Override

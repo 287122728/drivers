@@ -11,4 +11,6 @@ import java.util.List;
 public interface SchoolTuitionService {
 
     public List<SchoolTuitionVo> findAll();
+
+    public SchoolTuition update(SchoolTuition schoolTuition);
 }

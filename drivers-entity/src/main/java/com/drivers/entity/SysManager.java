@@ -2,6 +2,8 @@ package com.drivers.entity;
 
 import com.drivers.entity.base.BaseEntity;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,6 +23,8 @@ import java.time.ZonedDateTime;
 @Entity
 @Table(name = "sys_manager")
 @Data
+@DynamicInsert
+@DynamicUpdate
 public class SysManager extends BaseEntity{
     /**
      * 用户名
