@@ -19,9 +19,9 @@
 <div class="main">
     <div class="row">
         <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+            <h3 class="page-header"><i class="fa fa-laptop"></i> 工作台</h3>
             <ol class="breadcrumb">
-                <li><i class="fa fa-home"></i><a href="${ctx}/indexindex.html">Home</a></li>
+                <li><i class="fa fa-home"></i><a href="${ctx}/index.html">首页</a></li>
                 <li><i class="fa fa-users"></i>学员管理</li>
                 <li><i class="fa fa-user"></i>学员信息</li>
             </ol>

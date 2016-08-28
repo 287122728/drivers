@@ -19,6 +19,12 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="#"><i class="fa fa-car"></i><span class="text"> 驾驶员管理</span> <span class="fa fa-angle-down pull-right"></span></a>
+                            <ul class="nav sub">
+                                <li><a href="/drivers"><i class="fa fa-car"></i><span class="text"> 驾驶员信息管理</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-users"></i><span class="text"> 学员管理</span> <span class="fa fa-angle-down pull-right"></span></a>
                             <ul class="nav sub">
                                 <li><a href="cadet"><i class="fa fa-user"></i><span class="text"> 学员信息管理</span></a></li>
